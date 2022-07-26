@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "ToolEZ by VQT",
+    "version": "1.0.0",
+    "icons": {
+        "16": "./images/logo.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "action": {
+        "default_popup": "./popup.html",
+        "default_icon": {
+            "16": "./images/logo.png"
+        },
+        "default_title": "Click Me"
+    },
+    "options_page": "./options.html",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://thongtindaotao.sgu.edu.vn/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://tekio.vn/projects/ezvlxd/issues/new"
+            ],
+            "js": [
+                "foreground.js"
+            ],
+            "css": [
+                "fix.css"
+            ]
+        }
+    ]
+}

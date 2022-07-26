@@ -1,0 +1,11 @@
+@mixin flexCenter {
+    color: white;
+    background-color: black;
+}
+.class{
+    @include flexCenter()
+}
+.class2{
+    @include flexCenter()
+
+}
