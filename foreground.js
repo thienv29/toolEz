@@ -49,6 +49,7 @@ if (data) {
     const subjectIssue = document.querySelector('#issue_subject')
     const piorityIssue = document.querySelector('#issue_priority_id')
     const assignIssue = document.querySelector('#issue_assigned_to_id')
+    const versionSprint = document.querySelector('#issue_fixed_version_id')
 
 
 
@@ -89,6 +90,7 @@ if (data) {
 
         const item = listTask[index];
         subjectIssue.value = item.title
+        versionSprint.value = 36
         switch (item.type) {
             case 'Bug':
                 selectTypeIssue.value = 1;

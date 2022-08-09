@@ -28,7 +28,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://tekio.vn/projects/ezvlxd/issues/new"
+                "https://tekio.vn/projects/ezvlxd/issues/new*"
             ],
             "js": [
                 "foreground.js"
